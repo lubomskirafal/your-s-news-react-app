@@ -1,4 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+News Reader. Live version available on www.yours-news.com until August 10, 2021. Public API returns maximum 10 articles. 
+Technologies used: React, JSX, Sass, css-grid, AJAX.
+I am happy to get advice and comments.
 
 ## Available Scripts
 
