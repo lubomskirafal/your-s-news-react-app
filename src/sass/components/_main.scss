@@ -1,0 +1,85 @@
+
+.app__content {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 10px;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 100%;
+    padding: 100px $main-padding $main-padding $main-padding;
+    min-height: calc(100vh - 100px);
+    background-color: $main-bgc;
+    text-align: left;
+    @media (min-width: 600px) {
+        min-height: calc(100vh - 50px);
+    }
+    &-title {
+        font-size: 2rem;
+        letter-spacing: 1px;
+        color: $main-fc;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &-time {
+        margin: 0;
+        padding: 0;
+        font-weight: 100;
+        font-size: 1rem;
+        color: $second-fc;
+        margin-top: 5px;
+        font-family: Monospace, sans-serif;
+    }
+    &-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        overflow: hidden;
+        width: 300px;
+        min-height: 400px;
+        padding: 5px;
+        margin: 0 auto;
+        border-bottom: 1px solid $border-color;
+    }
+    &-figure {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        border-radius: 5px;
+        height: 150px;
+        width: 100%;
+        overflow: hidden;
+        background-color: $main-bgc;
+        &-caption {
+            margin-top: 5px;
+            font-size: 1rem;
+            color: $second-fc;
+            align-self: flex-start;
+        }
+    }
+    &-img {
+        border-radius: 5px;
+        width: 100%;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &-article {
+        font-size: 1.6rem;
+        margin: 20px 5px;
+        color: darken($second-fc, 30%);
+        line-height: 18px;
+    }
+    &__no-articles {
+        font-size: 2rem;
+        color: $second-color;
+    }
+}

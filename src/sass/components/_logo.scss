@@ -1,0 +1,21 @@
+.logo {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 100%;
+    padding: $main-padding;
+    height: 50px;
+    @media(min-width: 600px) {
+        max-width: 400px;
+    }
+    &__img {
+        width: 40px;
+        margin-right: 10px;
+    }
+    &__text {
+        display: flex;
+        align-items: center;
+        font-size: 3rem;
+        color: $second-color;
+    }
+}

@@ -1,0 +1,39 @@
+.search {
+    position: relative;
+    width: 100%;
+    padding: $main-padding;
+    @media(min-width: 600px) {
+        max-width: 400px;
+    }
+    &__input {
+        width: 100%;
+        height: 30px;
+        font-size: 2rem;
+        padding: 2px 30px 2px 2px;
+        border: 1px solid $second-color;
+        &:active,
+        &:focus {
+            box-shadow: 0 0 4px -1px $second-color;
+        }
+    }
+    &__button {
+        position: absolute;
+        background-clip: none;
+        border: none;
+        background-color: transparent;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 6px;
+        width: 30px;
+        height: 27px;
+        background-color: $main-bgc;
+        overflow: hidden;
+        &:hover {
+            cursor: pointer;
+        }
+        &-img {
+                width: 100%;
+                height: 100%;
+        }
+    }
+}

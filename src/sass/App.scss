@@ -1,0 +1,47 @@
+@import './components/reset';
+@import './components/variables';
+@import './components/scrollBar';
+@import './components/cookieInfo';
+@import './components/search';
+@import './components/logo';
+@import './components/main';
+@import './components/footer';
+
+body {
+    position: relative;
+    width: 100%;
+    max-width: 2000;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    @media (min-width: 600px) {
+       flex-direction: row;
+       justify-content: space-between;
+    }
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    background-color: $main-bgc;
+    transition: transform .5s;
+    z-index: 1;
+    @media (min-width: 600px) {
+        height: 50px;
+    }
+}
+
+

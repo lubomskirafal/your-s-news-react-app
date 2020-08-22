@@ -1,0 +1,93 @@
+.cookieInfo {
+    padding: 10px;
+    font-size: 1.4rem;
+    color: $second-fc;
+    text-align: left;
+    ul {
+        list-style: none;
+        li {
+            font-size: 1.4rem;
+        }
+    }
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+        font-weight: normal;
+        color: $second-color;
+        margin: 10px 0 20px 0;
+    }
+    h2{
+        font-size: 1.8rem;
+        font-weight: normal;
+        margin: 10px 0;
+        color: $main-fc;
+    }
+    p {
+        font-size: 1.4rem;
+        color: $second-fc;
+    }
+    a {
+        color: $second-fc;
+        font-size: 1.3rem;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    strong {
+        font-size: 1.4rem;
+    }
+    button {
+        margin: 20px 0;
+        font-size: 1.4rem;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        color: $third-color;
+        background-color: $main-bgc;
+        transition: color .3s, background-color .3s;
+        &:hover {
+            cursor: pointer;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+            color: $main-bgc;
+            background-color: $third-color;
+        }
+    }
+}
+
+.cookiesAlert {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    p {
+        font-size: 1.8rem;
+        color: $second-fc;
+        text-align: center;
+    }
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 200px;
+        margin-top: 20px;
+        button {
+            font-size: 1.4rem;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            color: $main-bgc;
+            background-color: $third-color;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+}
