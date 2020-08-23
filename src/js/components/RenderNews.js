@@ -1,16 +1,22 @@
+
 import React from 'react';
 
+const getTitle = (target)=> {
+  const firstLetter = [...target][0]
+  const title = [...target];
+  title[0] = firstLetter.toUpperCase();
+  return title.join('');
+};
 
 const RenderNews = props => {
     const timeRegex = /[A-Z]/gi;
     const stockImg = './img-placeholder.jpg';
     const articles = props.searched.map((article, index)=>{
-      const {description, image, publishedAt, source, title, url, } = article;
-     
+    const {description, image, publishedAt, source, title, url, } = article;
       return (
         <article key={source.name?source.name+index:url+index}  className="app__content-box">
           <div className="app__content-titles">
-            <a href={url} target="blank"><h2 className="app__content-title">{title?title:"Can't load article title"}</h2></a>
+            <a href={url} target="blank"><h2 className="app__content-title">{title?getTitle(title):"Can't load article title"}</h2></a>
             <p className="app__content-time">{publishedAt.replace(timeRegex,' ')}</p>
           </div>
           <figure className="app__content-figure">
